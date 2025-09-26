@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osmany's Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4318cd3905.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo-white.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>IT Professional</p>
+          <h1>
+            Hello, I'm <span>Osmany<br />Argueta</span>
+          </h1>
+        </div>
+        <a href="images/Osmany Argueta.pdf" download class="btn btn2"
+          >Download Resume</a
+        >
+        <a href="#about" class="btn btn2">See More</a>
+      </div>
+    </div>
+
+    <!-----------------------------------About section------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/osmany-profile.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Based in the United States with a Bachelor's degree in Computer
+              Science, I leverage my academic background to excel in the tech
+              industry.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Coding Languages:</span><br />Java, JavaScript, Python,
+                  HTML, CSS, Kotlin, TypeScript.
+                </li>
+                <li>
+                  <span>Frameworks & Tools:</span><br />Node.js, Strapi, React,
+                  Jest, OpenAPI, Swagger, TypeDoc, GitLab, Kubernetes.
+                </li>
+                <li>
+                  <span>Software:</span><br />Visual Studio, Android Studio,
+                  IntelliJ IDEA, NetBeans, Eclipse IDE, Microsoft 365.
+                </li>
+                <li>
+                  <span>API's:</span><br />Google Places, Microsoft Graph,
+                  NGROK, Strapi, Custom.
+                </li>
+                <li>
+                  <span>Cloud:</span><br />AWS Lightsail, Ubuntu, Apache, Azure,
+                  Power Automate, GitHub Pages.
+                </li>
+                <li>
+                  <span>AI:</span><br />Open Source LLMs (Llama3 | Qwen | DeepSeek), OpenAI API,
+                  EverythingLLM, LM Studio, Ollama, LangChain, Model Context Protocol (MCP).
+                </li>
+                <li>
+                  <span>Spoken Languages:</span><br />Spanish(Highly Fluent),
+                  English(Highly Fluent).
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Farmingdale State College:</span><br />B.S Degree in
+                  Computer Science - 3.46/4.0 GPA.
+                </li>
+                <li>
+                  <span>Relevant Courses:</span><br />Mobile Applications Dev,
+                  Computer Networks, Database Management, Advanced Programing,
+                  Data Structures & Algorithms II, Computer Architecture, AI & ML.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------Experience------------------------------->
+    <div id="experience">
+      <div class="container">
+        <h1 class="sub-title">Experience</h1>
+
+        <!--------------------------------Florida Blue------------------------------->
+        <h2>Florida Blue – Application Developer Intern</h2>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/api-doc.png" />
+            <div class="layer">
+              <h3>API Documentation Automation</h3>
+              <p>
+                Developed and documented RESTful APIs using OpenAPI, Swagger,
+                and TypeDoc across TypeScript and Go services. Streamlined
+                onboarding by automating code and API documentation workflows.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/envoy.png" />
+            <div class="layer">
+              <h3>Kubernetes & Envoy Performance Testing</h3>
+              <p>
+                Performed load testing with Autocannon to benchmark Node.js and
+                Go microservices behind NGINX and Envoy reverse proxies.
+                Informed routing and scalability strategies for Kubernetes
+                clusters.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/NLIDB.png" />
+            <div class="layer">
+              <h3>Enabled AI-driven Data Access</h3>
+              <p>
+                Researched Natural Language Interfaces to Databases (NLIDBs) to
+                support natural language querying of MongoDB collections.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------------------Day & Nite------------------------------->
+        <h2>Day & Nite – IT Systems Administrator</h2>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/strapi.jpg" />
+            <div class="layer">
+              <h3>3rd Party Portal Unification</h3>
+              <p>
+                Developed a web app with Strapi CMS, JavaScript backend, Graph
+                API, SQL, and cloud deployment, ensuring efficient work order
+                processing.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/it-support.png" />
+            <div class="layer">
+              <h3>IT Support & Hardware Upgrades</h3>
+              <p>
+                Delivered comprehensive technical support for employees,
+                resolving connectivity, software, and hardware issues on various
+                devices (PCs, printers, routers, monitors, phones) using
+                Splashtop for remote assistance, and performed physical hardware
+                upgrades (RAM, HDD, and SSD) to boost system performance.
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/azure-flows.png" />
+            <div class="layer">
+              <h3>Azure Automated Flows</h3>
+              <p>
+                Simplified Day & Nite’s onboarding and offboarding processes
+                with Azure Cloud Flows and Desktop Flows aligned with M365
+                Admin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------Portfolio------------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/z-app.png" />
+            <div class="layer">
+              <h3>Z App</h3>
+              <p>
+                **WIP**
+              </p>
+              <p>
+                Z-App is an open-source mobile app for Nissan Z owners, 
+                modernizing outdated ECU diagnostic and maintenance tools.
+              </p>
+              <a href="https://github.com/OsmanyARdx/z-app"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square custom-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/blab.png" />
+            <div class="layer">
+              <h3>Blab App</h3>
+              <p>
+                Blab is a language-learning app that combines immersive
+                conversation practice with social media features, connecting
+                learners with native speakers for real-world interactions.
+              </p>
+              <a href="https://github.com/OsmanyARdx/Blab-App"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square custom-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/Cover.png" />
+            <div class="layer">
+              <h3>Light Weight App</h3>
+              <p>
+                LightWeight, a one-stop app for nutrition education and exercise
+                expertise. Utilizing various API endpoints for crucial
+                information.
+              </p>
+              <a href="https://github.com/OsmanyARdx/LightWeight"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square custom-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/project-1.png" />
+            <div class="layer">
+              <h3>Serenity App</h3>
+              <p>
+                The Online Mental Health Platform is a group project using
+                MongoDB to offer mental health programs, meditation, and
+                self-help resources.
+              </p>
+              <a href="https://github.com/OsmanyARdx/CSC325Project"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square custom-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/project-2.png" />
+            <div class="layer">
+              <h3>JDM Import-Now App</h3>
+              <p>
+                This app lets you browse JDM cars, compare models, and guides
+                you through importing your dream car.
+              </p>
+              <a href="https://github.com/OsmanyARdx/JDM-Import"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square custom-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/mestanza.png" />
+            <div class="layer">
+              <h3>Mestanza Customer Website</h3>
+              <p>
+                Designed and developed a responsive website with HTML, CSS, and
+                JavaScript, hosted on GitHub Pages for optimal performance and
+                accessibility.
+              </p>
+              <a href="https://mestanzalandscaping.github.io/"
+                ><i
+                  class="fa-solid fa-arrow-up-right-from-square custom-icon"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/OsmanyARdx?tab=repositories" class="btn"
+          >See more</a
+        >
+      </div>
+    </div>
+
+    <!-------------------------------Contact------------------------------>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>osmarguet@gmail.com</p>
+
+            <p><i class="fa-solid fa-square-phone"></i>(631) 926-4782</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/osmanyaac/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/OsmanyARdx"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+            </div>
+            <a href="#header" class="btn btn2"
+              ><i class="fa-solid fa-up-long"> Scroll Up</i></a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2025 Osmany Argueta. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx7NsjFMSC5_k3OIc36jxDJPo_GjyFpMvfeCOOSETp7M7dPQkwxDuYJ_c1Fq0qvtNhKHA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
